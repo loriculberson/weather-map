@@ -23,7 +23,6 @@ var Weather = React.createClass({
   },
 
   render: function() {
-    
     return <View style={styles.container}>
       <MapView 
         annotations={[this.state.pin]}
@@ -37,6 +36,7 @@ var Weather = React.createClass({
       </View>
     </View>
   },
+
   onRegionChangeComplete: function(region) {
     this.setState({
       pin: {
